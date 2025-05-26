@@ -4,6 +4,10 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
   background-color: #e6e3df;
   color: #0a6977;
   font-family: "Montserrat", sans-serif;
@@ -27,7 +31,7 @@ header {
 h1 {
   text-align: left;
   color: #e6e3df;
-  font-size: 2.3rem;
+  font-size: 2rem;
   padding-left: 15px;
   margin-left: 20px;
 }
@@ -41,7 +45,7 @@ nav li {
 nav a {
   color: #e6e3df;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 nav a:hover {
@@ -54,12 +58,12 @@ nav.desktop {
 
 nav.mobile {
   flex-grow: 1;
-  text-align: left; /* So links don’t center when full width */
+  text-align: left;
 }
 
 nav.mobile ul {
   display: flex;
-  justify-content: center; /* or flex-start */
+  justify-content: center;
   gap: 1rem;
   margin: 0;
   padding-left: 0;
@@ -71,9 +75,13 @@ i {
 }
 
 /* Main content styles */
+main {
+  flex: 1;
+}
+
 .container {
-  max-width: 1200px; /* Or whatever max width you want */
-  margin: 75px auto 0 auto; /* margin-top and center horizontally */
+  max-width: 1200px;
+  margin: 75px auto 0 auto;
   padding: 0 1rem;
   box-sizing: border-box;
   width: 100%;
@@ -93,7 +101,6 @@ i {
 
 #about p {
   color: #355155;
-  background-color: rgba(236, 230, 218, 0.5);
   font-size: 1.2rem;
 }
 
@@ -142,6 +149,38 @@ details img {
 
 details p {
   color: #e6e3df;
+}
+
+/* Skills section */
+#skills {
+  border-top: 1px solid #4e2057;
+}
+
+div.desktop {
+  display: none;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+#skills i {
+  color: #4e2057;
+  margin-right: 8px;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+/* Footer styles */
+footer {
+  background-color: #4e2057;
+  color: #e6e3df;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 /* For Tablets, minimum of 600px */
