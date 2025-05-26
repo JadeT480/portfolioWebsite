@@ -81,13 +81,7 @@ i {
 
 /* About section */
 #about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
+  border-top: 1px solid #4e2057;
 }
 
 #about h2 {
@@ -107,6 +101,47 @@ i {
   display: none;
   max-width: 100%;
   height: auto;
+}
+
+/* Projects section */
+#projects {
+  border-top: 1px solid #4e2057;
+}
+
+details {
+  margin-bottom: 1rem;
+  border: 1px solid #4e2057;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  background-color: #4e2057;
+  cursor: pointer;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #e6e3df;
+  outline: none;
+}
+
+summary:hover {
+  color: #0a6977;
+}
+
+details[open] p,
+details[open] img {
+  margin-top: 0.5rem;
+}
+
+details img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+details p {
+  color: #e6e3df;
 }
 
 /* For Tablets, minimum of 600px */
