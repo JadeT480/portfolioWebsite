@@ -1,73 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="resources/styles.css" type="text/css">
-  <link rel="shortcut icon" href="resources/images/favicon.png" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/ce9ed04bdd.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <h1>Jade Taylor</h1>
-    <nav class="desktop">
-      <ul>
-        <li><a href="#about"><i class="fa-solid fa-user"></i> About </a></li>
-        <li><a href="#projects"><i class="fa-solid fa-folder-open"></i> Projects </a></li>
-        <li><a href="#skills"><i class="fa-solid fa-hammer"></i> Skills </a></li>
-        <li><a href="contact.html"><i class="fa-solid fa-address-card"></i> Contact</a></li>
-      </ul>
-    </nav>
-    <nav class="mobile">
-      <ul>
-        <li><a href="#about"><i class="fa-solid fa-user"></i></a></li>
-        <li><a href="#projects"><i class="fa-solid fa-folder-open"></i></a></li>
-        <li><a href="#skills"><i class="fa-solid fa-hammer"></i></a></li>
-        <li><a href="contact.html"><i class="fa-solid fa-address-card"></i></a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Originally a forensic scientist, I have decided to persue my passion for coding. What started as a hobby, just playing around with python and such, turned into me starting a course and hoping to change career.</p>
-    <p>My cat, Kevin, is always close by. He keeps me motivated.</p>
-    <img src="resources/images/business_kevin.jpg" alt="Kevin wearing a tie">
-  </section>
-  <section id="projects">
-    <h2>Projects</h2>
-    <a href="https://github.com/JadeT480?tab=repositories" target="_blank">GitHub Repositories</a>
-    <h3>Project Selection</h3>
-    <article>
-      <h4>Mixed Messages</h4>
-      <img src="resources/images/mixed_messages.png" alt="Screenshot of the code for the mixed messages program">
-      <p>Using JavaScript, this project allows users to receive a random message.</p>
-    </article>
-    <article>
-      <h4>Number Guesser</h4>
-      <img src="resources/images/number_guesser.png" alt="Screenshot of the number guesser game">
-      <p>Using JavaScript, users compete with the computer to correctly guess the number.</p>
-    </article>
-    <article>
-      <h4>Taylors Touch</h4>
-      <img src="resources/images/taylors_touch.png" alt="Screenshot of landing page for Taylors Touch">
-      <p>A mix of HTML and CSS, this is the first draft of a static webpage for a massage business.</p>
-    </article>
-  </section>
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-    </ul>
-  </section>
-  <footer>
-    <p>Taylor Made 2025</p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resources/styles.css" type="text/css" />
+    <link
+      rel="shortcut icon"
+      href="resources/images/favicon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/ce9ed04bdd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Jade Taylor</h1>
+      <nav class="desktop">
+        <ul>
+          <li>
+            <a href="#about"><i class="fa-solid fa-user"></i> About </a>
+          </li>
+          <li>
+            <a href="#projects"
+              ><i class="fa-solid fa-folder-open"></i> Projects
+            </a>
+          </li>
+          <li>
+            <a href="#skills"><i class="fa-solid fa-hammer"></i> Skills </a>
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa-solid fa-address-card"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile">
+        <ul>
+          <li>
+            <a href="#about"><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li>
+            <a href="#projects"><i class="fa-solid fa-folder-open"></i></a>
+          </li>
+          <li>
+            <a href="#skills"><i class="fa-solid fa-hammer"></i></a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fa-solid fa-address-card"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Originally a forensic scientist, I have decided to persue my passion
+          for coding. What started as a hobby, just playing around with python
+          and such, turned into me starting a course and hoping to change
+          career.
+        </p>
+        <p>My cat, Kevin, is always close by. He keeps me motivated.</p>
+        <img
+          src="resources/images/business_kevin.jpg"
+          alt="Kevin wearing a tie"
+        />
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <a href="https://github.com/JadeT480?tab=repositories" target="_blank"
+          >GitHub Repositories</a
+        >
+        <h3>Project Selection</h3>
+        <article>
+          <h4>Mixed Messages</h4>
+          <img
+            src="resources/images/mixed_messages.png"
+            alt="Screenshot of the code for the mixed messages program"
+          />
+          <p>
+            Using JavaScript, this project allows users to receive a random
+            message.
+          </p>
+        </article>
+        <article>
+          <h4>Number Guesser</h4>
+          <img
+            src="resources/images/number_guesser.png"
+            alt="Screenshot of the number guesser game"
+          />
+          <p>
+            Using JavaScript, users compete with the computer to correctly guess
+            the number.
+          </p>
+        </article>
+        <article>
+          <h4>Taylors Touch</h4>
+          <img
+            src="resources/images/taylors_touch.png"
+            alt="Screenshot of landing page for Taylors Touch"
+          />
+          <p>
+            A mix of HTML and CSS, this is the first draft of a static webpage
+            for a massage business.
+          </p>
+        </article>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Taylor Made 2025</p>
+    </footer>
+  </body>
 </html>

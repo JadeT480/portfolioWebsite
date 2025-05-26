@@ -1,4 +1,8 @@
 /* Universal Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #e6e3df;
   color: #0a6977;
@@ -23,13 +27,9 @@ header {
 h1 {
   text-align: left;
   color: #e6e3df;
-  font-size: 2.5rem;
-  padding: 15px;
-  margin: 20px;
-}
-
-nav {
-  margin: 20px;
+  font-size: 2.3rem;
+  padding-left: 15px;
+  margin-left: 20px;
 }
 
 nav li {
@@ -41,7 +41,7 @@ nav li {
 nav a {
   color: #e6e3df;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 nav a:hover {
@@ -52,32 +52,61 @@ nav.desktop {
   display: none;
 }
 
+nav.mobile {
+  flex-grow: 1;
+  text-align: left; /* So links don’t center when full width */
+}
+
+nav.mobile ul {
+  display: flex;
+  justify-content: center; /* or flex-start */
+  gap: 1rem;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
 i {
   color: #0a6977;
+}
+
+/* Main content styles */
+.container {
+  max-width: 1200px; /* Or whatever max width you want */
+  margin: 75px auto 0 auto; /* margin-top and center horizontally */
+  padding: 0 1rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* About section */
 #about {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  margin-top: 75px;
-  overflow: hidden;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-/* Queries section */
-#queries {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 75px;
-  overflow: hidden;
+#about h2 {
+  color: #e6e3df;
+  background-color: #4e2057;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+#about p {
+  color: #355155;
+  background-color: rgba(236, 230, 218, 0.5);
+  font-size: 1.2rem;
+}
+
+#about img {
+  display: none;
+  max-width: 100%;
+  height: auto;
 }
 
 /* For Tablets, minimum of 600px */
@@ -86,24 +115,17 @@ i {
     height: 100px;
   }
 
-  #about {
+  h1 {
+    padding: 15px;
+    margin-left: 30px;
+  }
+
+  .container {
     margin-top: 100px;
   }
 
-  #queries {
-    margin-top: 100px;
-  }
-
-  nav a {
-    font-size: 1rem;
-  }
-
-  nav.desktop {
-    display: inline;
-  }
-
-  nav.mobile {
-    display: none;
+  #about img {
+    display: block;
   }
 }
 
@@ -111,14 +133,6 @@ i {
 @media only screen and (min-width: 1024px) {
   header {
     height: 125px;
-  }
-
-  #about {
-    margin-top: 125px;
-  }
-
-  #queries {
-    margin-top: 125px;
   }
 
   nav.desktop {
@@ -136,6 +150,10 @@ i {
 
   h1 {
     font-size: 3.2rem;
+  }
+
+  .container {
+    margin-top: 125px;
   }
 }
 
