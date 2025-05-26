@@ -1,0 +1,152 @@
+/* Universal Styles */
+body {
+  background-color: #e6e3df;
+  color: #0a6977;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+/* Header section */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 75px;
+  background-color: #4e2057;
+}
+
+h1 {
+  text-align: left;
+  color: #e6e3df;
+  font-size: 2.5rem;
+  padding: 15px;
+  margin: 20px;
+}
+
+nav {
+  margin: 20px;
+}
+
+nav li {
+  display: inline;
+  margin: 2px;
+  padding: 2px;
+}
+
+nav a {
+  color: #e6e3df;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+nav a:hover {
+  color: #0a6977;
+}
+
+nav.desktop {
+  display: none;
+}
+
+i {
+  color: #0a6977;
+}
+
+/* About section */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 75px;
+  overflow: hidden;
+}
+
+/* Queries section */
+#queries {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 75px;
+  overflow: hidden;
+}
+
+/* For Tablets, minimum of 600px */
+@media only screen and (min-width: 600px) {
+  header {
+    height: 100px;
+  }
+
+  #about {
+    margin-top: 100px;
+  }
+
+  #queries {
+    margin-top: 100px;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  nav.desktop {
+    display: inline;
+  }
+
+  nav.mobile {
+    display: none;
+  }
+}
+
+/* For laptops, minimum 1024px */
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 125px;
+  }
+
+  #about {
+    margin-top: 125px;
+  }
+
+  #queries {
+    margin-top: 125px;
+  }
+
+  nav.desktop {
+    display: inline;
+  }
+
+  nav.mobile {
+    display: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-size: 1.7rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+
+/* For Desktop, minimum of 1400px */
+@media only screen and (min-width: 1400px) {
+  nav a {
+    text-decoration: none;
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
