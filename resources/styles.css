@@ -175,6 +175,45 @@ div.desktop {
   vertical-align: middle;
 }
 
+/* Contact styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #0a6977;
+  border-radius: 6px;
+}
+
+form input[type="submit"] {
+  background-color: #4e2057;
+  color: #e6e3df;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0a6977;
+}
+
 /* Footer styles */
 footer {
   background-color: #4e2057;
