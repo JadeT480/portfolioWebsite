@@ -1,5 +1,7 @@
 /* Universal Styles */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -238,7 +240,8 @@ footer {
   }
 
   #about img {
-    display: block;
+    display: inline-block;
+    height: 250px;
   }
 }
 
@@ -267,6 +270,27 @@ footer {
 
   .container {
     margin-top: 125px;
+  }
+
+  div.mobile {
+    display: none;
+  }
+
+  div.desktop {
+    display: inline-block;
+  }
+
+  .skills-list {
+    gap: 1.5rem;
+    list-style: none;
+    padding: 5px;
+  }
+
+  #skills i {
+    color: #4e2057;
+    margin-right: 10px;
+    font-size: 2.5rem;
+    vertical-align: middle;
   }
 }
 
