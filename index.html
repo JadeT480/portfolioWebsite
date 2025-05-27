@@ -24,6 +24,7 @@
   <body>
     <header>
       <h1>Jade Taylor</h1>
+      <!-- Navigation for users on larger screen sizes -->
       <nav class="desktop">
         <ul>
           <li>
@@ -44,6 +45,7 @@
           </li>
         </ul>
       </nav>
+      <!-- Navigation for users on smaller screen sizes -->
       <nav class="mobile">
         <ul>
           <li>
@@ -62,6 +64,7 @@
       </nav>
     </header>
     <main class="container">
+      <!-- First section with info about the author -->
       <section id="about">
         <h2>About Me</h2>
         <p>
@@ -76,12 +79,14 @@
           alt="Kevin wearing a tie"
         />
       </section>
+      <!-- Section for projects. Includes link to GitHub and a snapshot of some projects -->
       <section id="projects">
         <h2>Projects</h2>
         <a href="https://github.com/JadeT480?tab=repositories" target="_blank"
           >GitHub Repositories</a
         >
         <h3>Project Selection</h3>
+        <!-- Using details and summary to enable toggling to reduce space needed on screens -->
         <details>
           <summary>Mixed Messages</summary>
           <img
@@ -116,8 +121,10 @@
           </p>
         </details>
       </section>
+      <!-- Section for skills, changes depending on screen size -->
       <section id="skills">
         <h2>Skills</h2>
+        <!-- Larger screens have icons and words -->
         <div class="desktop">
           <ul class="skills-list">
             <li><i class="fa-brands fa-html5"></i> HTML</li>
@@ -128,6 +135,7 @@
             <li><i class="fa-brands fa-github"></i> GitHub</li>
           </ul>
         </div>
+        <!-- Smaller screens have only icons -->
         <div class="mobile">
           <ul class="skills-list">
             <li><i class="fa-brands fa-html5"></i></li>
@@ -143,5 +151,7 @@
     <footer>
       Taylor Made 2025
     </footer>
+    <script src="resources/script.js">
+    </script>
   </body>
 </html>

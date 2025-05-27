@@ -277,7 +277,7 @@ footer {
   }
 
   div.desktop {
-    display: inline-block;
+    display: block;
   }
 
   .skills-list {
